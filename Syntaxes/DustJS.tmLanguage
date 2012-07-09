@@ -68,6 +68,30 @@
 			<string>keyword.control.dust_start_section_tag</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.dust_section_name</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.dust_section_context</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.dust_section_params</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\{[#?^&lt;+@%]([a-zA-Z_$.0-9]+)(:[a-zA-Z_$0-9]+)?(( [a-zA-Z0-9_$]+\="?[^"]*"?)*)\/\}</string>
+			<key>name</key>
+			<string>keyword.control.dust_self_closing_section_tag</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\{\/(\.?[0-9a-zA-Z_$]*)+\}</string>
 			<key>name</key>
