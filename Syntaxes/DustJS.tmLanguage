@@ -31,7 +31,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\{((?:\.?[0-9a-zA-Z_$]*)+)(\|[a-zA-Z]+)?\}</string>
+			<string>\{([.0-9a-zA-Z_$]+)(\|[a-zA-Z]+)?\}</string>
 			<key>name</key>
 			<string>variable.other.dust_ref</string>
 		</dict>
@@ -93,7 +93,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\{\/(\.?[0-9a-zA-Z_$]*)+\}</string>
+			<string>\{\/([.0-9a-zA-Z_$])+\}</string>
 			<key>name</key>
 			<string>keyword.control.dust_end_section_tag</string>
 		</dict>
@@ -227,7 +227,7 @@
 		<key>dust_path</key>
 		<dict>
 			<key>match</key>
-			<string>(.?[a-zA-Z_$]?[0-9a-zA-Z_$]*)+</string>
+			<string>([.0-9a-zA-Z_$])+</string>
 		</dict>
 		<key>dust_special_chars</key>
 		<dict>
